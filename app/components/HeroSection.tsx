@@ -22,7 +22,31 @@ export default function HeroSection() {
         </svg>
       </motion.div>
 
+      {/* Second pokeball left */}
+      <motion.div
+        className="absolute bottom-32 left-[8%] w-20 h-20 opacity-[0.03] hidden lg:block"
+        animate={{ rotate: -360 }}
+        transition={{ duration: 45, repeat: Infinity, ease: "linear" }}
+      >
+        <svg viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="50" cy="50" r="48" stroke="#3b4cca" strokeWidth="3" />
+          <line x1="2" y1="50" x2="98" y2="50" stroke="#3b4cca" strokeWidth="3" />
+          <circle cx="50" cy="50" r="12" stroke="#3b4cca" strokeWidth="3" />
+          <circle cx="50" cy="50" r="6" fill="#3b4cca" />
+        </svg>
+      </motion.div>
+
       <div className="text-center max-w-3xl mx-auto relative z-10">
+        {/* Area label */}
+        <motion.div
+          className="mb-3"
+          initial={{ opacity: 0, y: 10 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5 }}
+        >
+          <span className="section-area-label">🏠 Starting Town</span>
+        </motion.div>
+
         {/* Greeting */}
         <motion.div
           className="mb-4"
@@ -62,12 +86,22 @@ export default function HeroSection() {
 
         {/* Title */}
         <motion.p
-          className="text-lg sm:text-xl text-[var(--text-secondary)] mb-6 font-medium"
+          className="text-lg sm:text-xl text-[var(--text-secondary)] mb-2 font-medium"
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.4 }}
         >
           {trainerData.title}
+        </motion.p>
+
+        {/* University */}
+        <motion.p
+          className="text-sm text-[var(--text-muted)] mb-6"
+          initial={{ opacity: 0, y: 10 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5, delay: 0.5 }}
+        >
+          🎓 {trainerData.education.degree} · {trainerData.education.university}
         </motion.p>
 
         {/* Quick stats */}
@@ -82,6 +116,7 @@ export default function HeroSection() {
             { label: "Badges", value: trainerData.badges, emoji: "🏅" },
             { label: "Projects", value: "5+", emoji: "⚔️" },
             { label: "Skills", value: "12+", emoji: "📖" },
+            { label: "CGPA", value: trainerData.education.cgpa, emoji: "🎓" },
           ].map((stat) => (
             <motion.div
               key={stat.label}
@@ -140,6 +175,25 @@ export default function HeroSection() {
             View Battles ⚔️
           </motion.a>
           <motion.a
+            href="#quests"
+            className="px-6 py-3 rounded-xl font-bold text-sm"
+            style={{
+              background: "rgba(78,205,196,0.12)",
+              border: "2px solid rgba(78,205,196,0.3)",
+              color: "#4ecdc4",
+              fontFamily: "var(--font-pixel)",
+              fontSize: "0.55rem",
+            }}
+            whileHover={{
+              scale: 1.05,
+              borderColor: "#4ecdc4",
+              boxShadow: "0 0 20px rgba(78,205,196,0.2)",
+            }}
+            whileTap={{ scale: 0.95 }}
+          >
+            Active Quests 🗺️
+          </motion.a>
+          <motion.a
             href="#contact"
             className="px-6 py-3 rounded-xl font-bold text-sm"
             style={{
@@ -156,7 +210,7 @@ export default function HeroSection() {
             }}
             whileTap={{ scale: 0.95 }}
           >
-            Contact Me 📬
+            PokéCenter 🏥
           </motion.a>
         </motion.div>
       </div>

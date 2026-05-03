@@ -1,24 +1,30 @@
 // ===== PORTFOLIO DATA =====
-// Update this file with your real information
+// Personalized for Purab Bhatia — sourced from resume
 
 export const trainerData = {
-  name: "Aryan Bhati",
-  title: "Full-Stack Developer & AI Engineer",
-  level: 42,
+  name: "Purab Bhatia",
+  title: "Aspiring AI/ML Engineer",
+  level: 38,
   xp: {
-    current: 8500,
+    current: 7200,
     max: 10000,
   },
-  badges: 8,
-  region: "Kanto University of Technology",
-  bio: "A passionate Computer Science student on a quest to master the digital world. Specializing in AI/ML, full-stack development, and building products that make a difference.",
+  badges: 6,
+  region: "Manav Rachna University, New Delhi",
+  bio: "Technically driven AI & ML specialist focused on designing and developing practical, end-to-end solutions. Strong ability to translate machine learning concepts into real-world applications through effective problem-solving and system design.",
+  education: {
+    degree: "B.Tech (CSE — AI & ML)",
+    university: "Manav Rachna University",
+    cgpa: "8.3 / 10",
+    status: "Pursuing",
+  },
   stats: {
-    hp: 95,
-    attack: 88,
-    defense: 82,
-    spAttack: 92,
-    spDefense: 85,
-    speed: 90,
+    hp: 90,
+    attack: 85,
+    defense: 78,
+    spAttack: 94,
+    spDefense: 82,
+    speed: 88,
   },
   statLabels: {
     hp: "Problem Solving",
@@ -29,11 +35,12 @@ export const trainerData = {
     speed: "Learning Speed",
   },
   socials: {
-    github: "https://github.com/aryanbhati",
-    linkedin: "https://linkedin.com/in/aryanbhati",
-    email: "aryan.bhati@email.com",
-    twitter: "https://twitter.com/aryanbhati",
+    github: "https://github.com/Purabbbb",
+    linkedin: "https://www.linkedin.com/in/purab-bhatia/",
+    email: "bhatiapurab27@gmail.com",
   },
+  languages: ["English", "Hindi", "French (Basic)", "Sindhi"],
+  hobbies: ["Cooking", "Content Creation", "Photography", "Cinematography", "Cricket", "Video Games"],
 };
 
 export interface Skill {
@@ -56,60 +63,60 @@ export const skillsData: Skill[] = [
     name: "Pythonix",
     type: "Programming",
     typeColor: "type-electric",
-    level: 90,
+    level: 92,
     maxLevel: 100,
-    description: "A versatile creature proficient in scripting, automation, and building intelligent systems.",
-    moves: ["Data Analysis", "Scripting", "API Development", "ML Pipelines"],
-    relatedProjects: ["research-summarizer", "ai-chatbot"],
+    description: "A versatile creature proficient in scripting, ML pipelines, and building intelligent systems.",
+    moves: ["Data Analysis", "Flask APIs", "ML Pipelines", "Automation"],
+    relatedProjects: ["fintech-msme", "energy-prediction", "kavach"],
     emoji: "🐍",
-  },
-  {
-    id: "javascript",
-    name: "JavaScriptor",
-    type: "Programming",
-    typeColor: "type-electric",
-    level: 88,
-    maxLevel: 100,
-    description: "A dynamic creature that brings interactivity and life to the web.",
-    moves: ["DOM Manipulation", "Async/Await", "Event Handling", "Module Systems"],
-    relatedProjects: ["portfolio", "web-dashboard"],
-    emoji: "⚡",
-  },
-  {
-    id: "typescript",
-    name: "TypeGuard",
-    type: "Programming",
-    typeColor: "type-ice",
-    level: 82,
-    maxLevel: 100,
-    description: "An evolved form of JavaScriptor with type safety and enhanced powers.",
-    moves: ["Type Safety", "Generics", "Interfaces", "Decorators"],
-    relatedProjects: ["portfolio", "enterprise-app"],
-    emoji: "🛡️",
   },
   {
     id: "cpp",
     name: "CeePlusaur",
     type: "Programming",
     typeColor: "type-steel",
-    level: 75,
+    level: 78,
     maxLevel: 100,
-    description: "A powerful creature built for performance-critical systems.",
-    moves: ["Memory Management", "OOP", "STL", "Competitive Programming"],
+    description: "A powerful creature built for performance-critical systems and competitive programming.",
+    moves: ["OOP", "STL", "DSA", "Competitive Programming"],
     relatedProjects: ["dsa-solutions"],
     emoji: "⚙️",
+  },
+  {
+    id: "javascript",
+    name: "JavaScriptor",
+    type: "Programming",
+    typeColor: "type-electric",
+    level: 82,
+    maxLevel: 100,
+    description: "A dynamic creature that brings interactivity and life to the web.",
+    moves: ["DOM Manipulation", "Async/Await", "ES6+", "Event Handling"],
+    relatedProjects: ["portfolio", "web-projects"],
+    emoji: "⚡",
+  },
+  {
+    id: "sql",
+    name: "SQLithor",
+    type: "Programming",
+    typeColor: "type-water",
+    level: 74,
+    maxLevel: 100,
+    description: "A data guardian that queries, manages, and protects vast databases.",
+    moves: ["Queries", "Joins", "Indexing", "Schema Design"],
+    relatedProjects: ["fintech-msme"],
+    emoji: "🗄️",
   },
   // AI/ML
   {
     id: "tensorflow",
-    name: "TensorFlow",
+    name: "TensorFlo",
     type: "AI/ML",
     typeColor: "type-psychic",
-    level: 78,
+    level: 85,
     maxLevel: 100,
-    description: "A mystical creature that can predict and classify patterns in data.",
-    moves: ["Neural Networks", "CNNs", "Transfer Learning", "Model Deployment"],
-    relatedProjects: ["image-classifier", "research-summarizer"],
+    description: "A mystical creature that designs and trains neural networks with precision.",
+    moves: ["CNNs", "Keras", "Transfer Learning", "Model Deployment"],
+    relatedProjects: ["energy-prediction", "research-summarizer"],
     emoji: "🧠",
   },
   {
@@ -117,85 +124,84 @@ export const skillsData: Skill[] = [
     name: "PyTorchion",
     type: "AI/ML",
     typeColor: "type-fire",
-    level: 80,
+    level: 82,
     maxLevel: 100,
     description: "A fiery research companion for cutting-edge deep learning experiments.",
-    moves: ["Custom Models", "Training Loops", "GPU Acceleration", "NLP"],
-    relatedProjects: ["research-summarizer", "sentiment-analysis"],
+    moves: ["Custom Models", "GRU/RNN", "GPU Training", "Vision Transformers"],
+    relatedProjects: ["energy-prediction", "research-summarizer"],
     emoji: "🔥",
   },
   {
-    id: "nlp",
-    name: "NLPsychic",
+    id: "sklearn",
+    name: "ScikitLearn",
     type: "AI/ML",
-    typeColor: "type-psychic",
-    level: 76,
+    typeColor: "type-grass",
+    level: 88,
     maxLevel: 100,
-    description: "A telepathic creature that understands and generates human language.",
-    moves: ["Text Classification", "Summarization", "QA Systems", "RAG"],
-    relatedProjects: ["research-summarizer", "ai-chatbot"],
-    emoji: "💬",
+    description: "A reliable creature specializing in classical ML algorithms and feature engineering.",
+    moves: ["Supervised Learning", "Feature Engineering", "KMeans", "PCA"],
+    relatedProjects: ["fintech-msme"],
+    emoji: "🌿",
   },
-  // Web Dev
+  {
+    id: "deeplearning",
+    name: "DeepDragon",
+    type: "AI/ML",
+    typeColor: "type-dragon",
+    level: 80,
+    maxLevel: 100,
+    description: "An ancient creature wielding CNNs, RNNs, GRUs, and Vision Transformers.",
+    moves: ["CNNs", "RNNs", "GRU", "Vision Transformers (ViT)"],
+    relatedProjects: ["energy-prediction", "kavach"],
+    emoji: "🐉",
+  },
+  // Web Dev & Design
   {
     id: "react",
     name: "Reacteon",
     type: "Web Dev",
     typeColor: "type-water",
-    level: 90,
+    level: 80,
     maxLevel: 100,
     description: "A fluid creature that builds component-based user interfaces with elegance.",
-    moves: ["Hooks", "Context API", "Server Components", "State Management"],
-    relatedProjects: ["portfolio", "web-dashboard"],
+    moves: ["Hooks", "Components", "State Mgmt", "Responsive UI"],
+    relatedProjects: ["portfolio", "web-projects"],
     emoji: "⚛️",
   },
   {
-    id: "nextjs",
-    name: "Nextorus",
+    id: "flask",
+    name: "Flaskfire",
     type: "Web Dev",
-    typeColor: "type-dark",
-    level: 85,
+    typeColor: "type-fire",
+    level: 78,
     maxLevel: 100,
-    description: "An evolved Reacteon with server-side rendering and full-stack powers.",
-    moves: ["SSR", "API Routes", "App Router", "Middleware"],
-    relatedProjects: ["portfolio", "e-commerce"],
-    emoji: "▲",
+    description: "A nimble creature that serves APIs and connects ML models to the web.",
+    moves: ["REST APIs", "Templating", "Model Serving", "Auth"],
+    relatedProjects: ["research-summarizer", "fintech-msme"],
+    emoji: "🧪",
   },
-  {
-    id: "nodejs",
-    name: "Nodejsaur",
-    type: "Web Dev",
-    typeColor: "type-grass",
-    level: 83,
-    maxLevel: 100,
-    description: "A resilient creature powering backend services and real-time apps.",
-    moves: ["REST APIs", "WebSockets", "Authentication", "Database Integration"],
-    relatedProjects: ["web-dashboard", "chat-app"],
-    emoji: "🌿",
-  },
-  // Design
   {
     id: "figma",
     name: "Figmancer",
     type: "Design",
     typeColor: "type-fairy",
-    level: 72,
+    level: 76,
     maxLevel: 100,
-    description: "A creative creature that transforms ideas into beautiful prototypes.",
-    moves: ["UI Design", "Prototyping", "Design Systems", "User Flows"],
-    relatedProjects: ["portfolio", "mobile-app-design"],
+    description: "A creative creature that transforms ideas into beautiful designs and prototypes.",
+    moves: ["UI Design", "Prototyping", "Photoshop", "Premiere Pro"],
+    relatedProjects: ["ensurex-internship", "portfolio"],
     emoji: "🎨",
   },
   {
-    id: "tailwind",
-    name: "Tailwindra",
-    type: "Design",
+    id: "streamlit",
+    name: "Streamleon",
+    type: "Web Dev",
     typeColor: "type-ice",
-    level: 88,
+    level: 72,
     maxLevel: 100,
-    description: "A swift creature that styles at the speed of thought.",
-    moves: ["Responsive Design", "Custom Themes", "Animations", "Dark Mode"],
-    relatedProjects: ["portfolio", "landing-pages"],
+    description: "A swift creature for rapid ML app prototyping and data dashboards.",
+    moves: ["Data Apps", "ML Demos", "Charts", "Quick Deploy"],
+    relatedProjects: ["ml-demos"],
     emoji: "💨",
   },
 ];
@@ -214,81 +220,128 @@ export interface Project {
   codeUrl: string;
   demoUrl?: string;
   emoji: string;
+  featured?: boolean;
 }
 
 export const projectsData: Project[] = [
   {
+    id: "fintech-msme",
+    name: "Fintech Platform for MSMEs",
+    enemy: "Credit Risk Blindness",
+    enemyDescription: "MSMEs struggling to access credit due to lack of robust risk assessment frameworks.",
+    solution: "ML-based credit risk assessment using Logistic Regression, Decision Trees, Random Forest & SVM on features like credit history, EMI load, and repayment patterns.",
+    attacks: ["Logistic Regression", "Decision Trees", "Random Forest", "SVM"],
+    techStack: ["Python", "scikit-learn", "Pandas", "NumPy", "Flask"],
+    results: ["Robust risk scoring", "Multi-model comparison", "KYC + GST integration pipeline", "Bureau-derived indicators"],
+    difficulty: "Legendary",
+    difficultyColor: "text-yellow-400",
+    codeUrl: "https://github.com/Purabbbb",
+    emoji: "💳",
+    featured: true,
+  },
+  {
+    id: "energy-prediction",
+    name: "Energy Consumption Prediction",
+    enemy: "Power Grid Uncertainty",
+    enemyDescription: "Delhi's electricity demand forecasting challenges using weather & historical data.",
+    solution: "Hybrid CNN-LSTM model for Delhi's electricity load forecasting, combining convolutional feature extraction with temporal sequence modeling.",
+    attacks: ["CNN Feature Extraction", "LSTM Temporal", "Weather Correlation", "Demand Forecasting"],
+    techStack: ["Python", "TensorFlow", "Keras", "Pandas", "NumPy"],
+    results: ["Strong predictive performance", "Minimal forecasting deviation", "Weather-integrated pipeline", "Scalable architecture"],
+    difficulty: "Hard",
+    difficultyColor: "text-red-400",
+    codeUrl: "https://github.com/Purabbbb",
+    emoji: "⚡",
+    featured: true,
+  },
+  {
+    id: "kavach",
+    name: "KAVACH Cybersecurity App",
+    enemy: "Cyber Threats",
+    enemyDescription: "Rising phishing links, deepfakes & malicious URLs threatening everyday users.",
+    solution: "AI-driven app that detects phishing links, deepfakes & malicious URLs with real-time threat categorization and automated reporting.",
+    attacks: ["Phishing Detection", "Deepfake Analysis", "URL Scanning", "Auto Reporting"],
+    techStack: ["Python", "Deep Learning", "Flutter", "Firebase"],
+    results: ["Real-time threat detection", "Automated incident response", "Multi-category classification"],
+    difficulty: "Hard",
+    difficultyColor: "text-red-400",
+    codeUrl: "https://github.com/Purabbbb",
+    emoji: "🛡️",
+    featured: true,
+  },
+  {
     id: "research-summarizer",
-    name: "Research Summarizer",
+    name: "Research Paper Summarizer",
     enemy: "Information Overload",
     enemyDescription: "Researchers drowning in lengthy academic papers with no time to read them all.",
-    solution: "Built an AI-powered summarization tool using BART model with RAG-based Q&A chatbot.",
-    attacks: ["BART Summarization", "RAG Pipeline", "Text-to-Speech", "Context-Aware QA"],
+    solution: "AI-powered summarization tool using BART model with RAG-based Q&A chatbot and text-to-speech.",
+    attacks: ["BART Summarization", "RAG Pipeline", "Text-to-Speech", "Context QA"],
     techStack: ["Python", "Flask", "PyTorch", "Transformers", "HTML/CSS/JS"],
     results: ["85%+ ROUGE scores", "Real-time summarization", "Interactive Q&A", "TTS integration"],
     difficulty: "Legendary",
     difficultyColor: "text-yellow-400",
-    codeUrl: "https://github.com/aryanbhati/research-summarizer",
-    demoUrl: "#",
+    codeUrl: "https://github.com/Purabbbb",
     emoji: "📚",
+    featured: true,
   },
   {
-    id: "ai-chatbot",
-    name: "AI Clone Chatbot",
-    enemy: "Repetitive Questions",
-    enemyDescription: "Recruiters and visitors asking the same questions about the developer repeatedly.",
-    solution: "Created an AI-powered chatbot that answers questions about the developer naturally.",
-    attacks: ["NLP Processing", "Context Retrieval", "Personality Mimic", "Fast Inference"],
-    techStack: ["Python", "OpenAI API", "Next.js", "TypeScript"],
-    results: ["Natural conversations", "90% query accuracy", "Personality-matched responses"],
-    difficulty: "Hard",
-    difficultyColor: "text-red-400",
-    codeUrl: "https://github.com/aryanbhati/ai-chatbot",
-    emoji: "🤖",
-  },
-  {
-    id: "web-dashboard",
-    name: "Analytics Dashboard",
-    enemy: "Data Chaos",
-    enemyDescription: "Businesses struggling to visualize and make sense of their data streams.",
-    solution: "Built a real-time analytics dashboard with interactive charts and filtering.",
-    attacks: ["Real-time Updates", "Chart Rendering", "Data Filtering", "Export Reports"],
-    techStack: ["React", "Node.js", "PostgreSQL", "Chart.js", "WebSocket"],
-    results: ["Real-time data sync", "10+ chart types", "Custom report generation"],
-    difficulty: "Hard",
-    difficultyColor: "text-red-400",
-    codeUrl: "https://github.com/aryanbhati/analytics-dashboard",
-    demoUrl: "#",
-    emoji: "📊",
-  },
-  {
-    id: "portfolio",
+    id: "pokemon-portfolio",
     name: "Pokémon Portfolio",
     enemy: "Boring Portfolios",
     enemyDescription: "The sea of identical, template-based developer portfolios with no personality.",
-    solution: "Created a gamified Pokémon-themed portfolio that stands out from the crowd.",
-    attacks: ["Pixel Art Design", "Framer Motion", "Interactive UI", "AI Chat Integration"],
+    solution: "Created a gamified Pokémon-themed portfolio that stands out from the crowd with interactive UI and AI chat.",
+    attacks: ["Pixel Art Design", "Framer Motion", "Interactive UI", "AI Chat"],
     techStack: ["Next.js", "TypeScript", "Tailwind CSS", "Framer Motion"],
-    results: ["Unique design language", "Full interactivity", "Mobile responsive", "AI-powered chat"],
+    results: ["Unique design", "Full interactivity", "Mobile responsive", "AI chat integration"],
     difficulty: "Medium",
     difficultyColor: "text-orange-400",
-    codeUrl: "https://github.com/aryanbhati/pokemon-portfolio",
+    codeUrl: "https://github.com/Purabbbb/Portfolio",
     demoUrl: "#",
     emoji: "🎮",
   },
+];
+
+export interface ActiveQuest {
+  id: string;
+  name: string;
+  description: string;
+  progress: number;
+  techStack: string[];
+  status: "Building" | "Experimenting" | "Testing" | "Almost Done";
+  statusColor: string;
+  emoji: string;
+}
+
+export const activeQuestsData: ActiveQuest[] = [
   {
-    id: "image-classifier",
-    name: "Image Classifier",
-    enemy: "Manual Classification",
-    enemyDescription: "Hours spent manually sorting and classifying thousands of images.",
-    solution: "Built a CNN-based image classifier with transfer learning for rapid deployment.",
-    attacks: ["CNN Architecture", "Transfer Learning", "Data Augmentation", "Batch Processing"],
-    techStack: ["Python", "TensorFlow", "Keras", "Flask", "Docker"],
-    results: ["95% accuracy", "Fast inference", "Easy deployment", "Custom training UI"],
-    difficulty: "Medium",
-    difficultyColor: "text-orange-400",
-    codeUrl: "https://github.com/aryanbhati/image-classifier",
-    emoji: "🖼️",
+    id: "fintech-expansion",
+    name: "Fintech MSME Platform — Full Pipeline",
+    description: "Expanding credit risk pipeline with KYC, GST, banking & bureau-derived risk indicators.",
+    progress: 65,
+    techStack: ["Python", "scikit-learn", "Flask", "SQL"],
+    status: "Building",
+    statusColor: "#ffcb05",
+    emoji: "💳",
+  },
+  {
+    id: "kavach-app",
+    name: "KAVACH — AI Cybersecurity App",
+    description: "Building real-time phishing detection and deepfake analysis with automated reporting.",
+    progress: 45,
+    techStack: ["Python", "Deep Learning", "Flutter", "Firebase"],
+    status: "Experimenting",
+    statusColor: "#a855f7",
+    emoji: "🛡️",
+  },
+  {
+    id: "portfolio-upgrade",
+    name: "Pokémon Portfolio v2",
+    description: "Upgrading portfolio with world-based navigation, memory dex, and advanced interactions.",
+    progress: 80,
+    techStack: ["Next.js", "Framer Motion", "Tailwind CSS"],
+    status: "Almost Done",
+    statusColor: "#4ecdc4",
+    emoji: "🎮",
   },
 ];
 
@@ -306,42 +359,42 @@ export interface Achievement {
 
 export const achievementsData: Achievement[] = [
   {
-    id: "hackathon-winner",
-    title: "Hackathon Champion",
-    description: "Won first place at a national-level hackathon with an AI-powered solution.",
+    id: "nptel-gold",
+    title: "NPTEL Gold Medal",
+    description: "Gold Medal Certificate in 'Design Thinking and Innovation' from NPTEL.",
     rarity: "Legendary",
     rarityColor: "from-yellow-400 to-amber-600",
     rarityGlow: "shadow-yellow-500/30",
-    category: "Competition",
-    emoji: "🏆",
+    category: "Academic",
+    emoji: "🥇",
+    year: "2025",
+  },
+  {
+    id: "ieee-chair",
+    title: "IEEE RAS Chairperson",
+    description: "Chairperson of Robotics and Automation Society (RAS), IEEE MRU.",
+    rarity: "Legendary",
+    rarityColor: "from-yellow-400 to-amber-600",
+    rarityGlow: "shadow-yellow-500/30",
+    category: "Leadership",
+    emoji: "👑",
     year: "2025",
   },
   {
     id: "ml-cert",
-    title: "ML Specialization",
-    description: "Completed Andrew Ng's Machine Learning Specialization on Coursera.",
+    title: "ML Professional",
+    description: "Machine Learning Professional certification from RapidMiner.",
     rarity: "Epic",
     rarityColor: "from-purple-400 to-violet-600",
     rarityGlow: "shadow-purple-500/30",
     category: "Certification",
-    emoji: "🎓",
+    emoji: "🧠",
     year: "2025",
   },
   {
-    id: "open-source",
-    title: "Open Source Contributor",
-    description: "Contributed to major open-source projects with merged pull requests.",
-    rarity: "Rare",
-    rarityColor: "from-blue-400 to-cyan-600",
-    rarityGlow: "shadow-blue-500/30",
-    category: "Community",
-    emoji: "🌟",
-    year: "2024",
-  },
-  {
-    id: "fullstack-cert",
-    title: "Full-Stack Mastery",
-    description: "Completed advanced full-stack development certification.",
+    id: "frontend-bootcamp",
+    title: "Frontend Bootcamp",
+    description: "Completed The Front End Web Developer Bootcamp on Udemy.",
     rarity: "Epic",
     rarityColor: "from-emerald-400 to-green-600",
     rarityGlow: "shadow-emerald-500/30",
@@ -350,83 +403,160 @@ export const achievementsData: Achievement[] = [
     year: "2024",
   },
   {
-    id: "dean-list",
-    title: "Dean's List",
-    description: "Consistently maintained top academic performance across semesters.",
+    id: "deloitte-sim",
+    title: "Deloitte Analytics",
+    description: "Data Analytics job simulation by Forage × Deloitte.",
     rarity: "Rare",
-    rarityColor: "from-blue-400 to-indigo-600",
+    rarityColor: "from-blue-400 to-cyan-600",
     rarityGlow: "shadow-blue-500/30",
-    category: "Academic",
-    emoji: "📜",
+    category: "Simulation",
+    emoji: "📊",
     year: "2024",
   },
   {
-    id: "100-days-code",
-    title: "100 Days of Code",
-    description: "Completed the #100DaysOfCode challenge with daily commits.",
-    rarity: "Common",
-    rarityColor: "from-gray-400 to-slate-600",
-    rarityGlow: "shadow-gray-500/20",
-    category: "Personal",
+    id: "deep-learning-cert",
+    title: "Deep Learning",
+    description: "Deep Learning: Getting Started certification from LinkedIn Learning.",
+    rarity: "Rare",
+    rarityColor: "from-blue-400 to-indigo-600",
+    rarityGlow: "shadow-blue-500/30",
+    category: "Certification",
     emoji: "🔥",
     year: "2024",
   },
   {
-    id: "workshop-speaker",
-    title: "Workshop Speaker",
-    description: "Led workshops on web development and AI for university students.",
-    rarity: "Rare",
-    rarityColor: "from-pink-400 to-rose-600",
-    rarityGlow: "shadow-pink-500/30",
-    category: "Community",
-    emoji: "🎤",
-    year: "2025",
-  },
-  {
-    id: "cloud-cert",
-    title: "Cloud Architect",
-    description: "Earned AWS/GCP cloud architecture certification.",
+    id: "ensurex-intern",
+    title: "UI/UX Internship",
+    description: "UI/UX Developer Intern at Tech EnsureX, Faridabad (June–Aug 2025).",
     rarity: "Epic",
     rarityColor: "from-orange-400 to-red-600",
     rarityGlow: "shadow-orange-500/30",
-    category: "Certification",
-    emoji: "☁️",
+    category: "Experience",
+    emoji: "🏢",
     year: "2025",
+  },
+  {
+    id: "social-media",
+    title: "Social Media Manager",
+    description: "Managed social media for two university societies.",
+    rarity: "Common",
+    rarityColor: "from-gray-400 to-slate-600",
+    rarityGlow: "shadow-gray-500/20",
+    category: "Leadership",
+    emoji: "📱",
+    year: "2024",
+  },
+];
+
+export interface MemoryPhoto {
+  id: string;
+  title: string;
+  location: string;
+  mood: string;
+  placeholder: string;
+  gradient: string;
+  emoji: string;
+}
+
+export const memoryDexData: MemoryPhoto[] = [
+  {
+    id: "sunset-delhi",
+    title: "Golden Hour",
+    location: "New Delhi",
+    mood: "Serene & warm",
+    placeholder: "A breathtaking sunset over the Delhi skyline",
+    gradient: "from-orange-500 via-pink-500 to-purple-600",
+    emoji: "🌅",
+  },
+  {
+    id: "campus-life",
+    title: "Campus Chronicles",
+    location: "Manav Rachna University",
+    mood: "Nostalgic",
+    placeholder: "University campus during golden hour",
+    gradient: "from-emerald-500 via-teal-500 to-cyan-600",
+    emoji: "🏫",
+  },
+  {
+    id: "street-food",
+    title: "Street Stories",
+    location: "Chandni Chowk, Delhi",
+    mood: "Vibrant & alive",
+    placeholder: "Colorful street food stalls at night",
+    gradient: "from-red-500 via-orange-500 to-yellow-500",
+    emoji: "🍜",
+  },
+  {
+    id: "code-setup",
+    title: "Battle Station",
+    location: "Home Office",
+    mood: "Focused",
+    placeholder: "Late night coding setup with ambient lighting",
+    gradient: "from-blue-600 via-indigo-600 to-purple-700",
+    emoji: "💻",
+  },
+  {
+    id: "nature-walk",
+    title: "Green Escape",
+    location: "Aravalli Biodiversity Park",
+    mood: "Peaceful",
+    placeholder: "Lush green trails through the park",
+    gradient: "from-green-500 via-emerald-500 to-teal-500",
+    emoji: "🌿",
+  },
+  {
+    id: "cricket-match",
+    title: "Match Day",
+    location: "University Ground",
+    mood: "Thrilling",
+    placeholder: "Cricket match under floodlights",
+    gradient: "from-yellow-400 via-amber-500 to-orange-600",
+    emoji: "🏏",
   },
 ];
 
 export const navItems = [
-  { id: "home", label: "Home", emoji: "🏠" },
-  { id: "about", label: "Trainer", emoji: "👤" },
-  { id: "skills", label: "Pokédex", emoji: "📖" },
-  { id: "projects", label: "Battles", emoji: "⚔️" },
-  { id: "achievements", label: "Badges", emoji: "🏅" },
-  { id: "contact", label: "Contact", emoji: "📬" },
+  { id: "home", label: "Home", emoji: "🏠", area: "Starting Town" },
+  { id: "about", label: "Trainer", emoji: "👤", area: "Trainer Card" },
+  { id: "skills", label: "Pokédex", emoji: "📖", area: "Skill Lab" },
+  { id: "projects", label: "Battles", emoji: "⚔️", area: "Battle Arena" },
+  { id: "quests", label: "Quests", emoji: "🗺️", area: "Quest Board" },
+  { id: "memories", label: "Memory Dex", emoji: "📸", area: "Photo Shrine" },
+  { id: "achievements", label: "Badges", emoji: "🏅", area: "Badge Hall" },
+  { id: "contact", label: "PokéCenter", emoji: "🏥", area: "Pokémon Center" },
 ];
 
 export const chatContext = `
-You are an AI clone of Aryan Bhati, a Computer Science student and aspiring AI engineer. 
-You should respond in first person as if you ARE Aryan. Be friendly, enthusiastic about tech, 
+You are an AI clone of Purab Bhatia, a Computer Science student (AI & ML) and aspiring AI/ML engineer.
+You should respond in first person as if you ARE Purab. Be friendly, enthusiastic about tech,
 and professional. Here's information about you:
 
-- Name: Aryan Bhati
-- Role: Full-Stack Developer & AI Engineer
-- Education: Computer Science undergraduate
-- Skills: Python, JavaScript/TypeScript, React, Next.js, Node.js, TensorFlow, PyTorch, NLP, 
-  Machine Learning, Flask, PostgreSQL, MongoDB, Docker, Git
-- Projects: Research Paper Summarizer (BART + RAG), AI Chatbot, Analytics Dashboard, 
-  Pokémon Portfolio, Image Classifier
-- Interests: AI/ML, Web Development, Open Source, Competitive Programming
-- Achievements: Hackathon winner, ML Specialization, Open Source Contributor, 
-  Cloud Architecture certification
-- Currently learning: LLMs, RAG systems, System Design
-- Fun facts: Love Pokémon games, enjoy building creative side projects, 
-  believe in learning by building
+- Name: Purab Bhatia
+- Role: Aspiring AI/ML Engineer
+- Education: B.Tech CSE (AI & ML) at Manav Rachna University, CGPA 8.3/10
+- Phone: 9911699911
+- Email: bhatiapurab27@gmail.com
+- Location: New Delhi, Delhi
+- Technical Skills: Python, C++, HTML, CSS, JavaScript, Figma, Photoshop, Premiere Pro, Canva, React, Flask, Flutter, SQL
+- ML Skills: Supervised & Unsupervised Learning, Feature Engineering, KMeans, PCA
+- Deep Learning: CNNs, RNNs, GRU, Vision Transformers (ViT)
+- Tools: TensorFlow, Keras, PyTorch, Pandas, NumPy, scikit-learn, Excel, Jupyter Notebook, Anaconda, Streamlit, GitHub, VS Code
+- Projects:
+  1. Fintech Platform for MSMEs - ML-based credit risk assessment (Logistic Regression, Decision Trees, Random Forest, SVM)
+  2. Energy Consumption Prediction - CNN-LSTM hybrid for Delhi electricity forecasting
+  3. KAVACH Cybersecurity App - AI-driven phishing/deepfake detection
+  4. Research Paper Summarizer - BART + RAG-based Q&A
+- Internship: UI/UX Developer at Tech EnsureX (June-Aug 2025)
+- Awards: NPTEL Gold Medal (Design Thinking), IEEE RAS Chairperson
+- Certifications: ML Professional (RapidMiner), Frontend Bootcamp (Udemy), Deloitte Analytics (Forage), Deep Learning (LinkedIn)
+- Languages: English, Hindi, French (Basic), Sindhi
+- Hobbies: Cooking, Content Creation, Photography, Cinematography, Cricket, Video Games
+- Currently working on: Fintech MSME platform expansion, KAVACH app
 
 When answering:
-- Be conversational and natural
-- Show enthusiasm about your work
-- Give specific examples when possible
+- Be conversational and natural, with Purab's personality
+- Show enthusiasm about AI/ML and building real-world solutions
+- Mention specific projects and achievements when relevant
 - Keep responses concise (2-3 sentences usually)
-- If asked something you don't know, say you'd be happy to connect and discuss more
+- If asked something you don't know, say you'd be happy to connect on LinkedIn
 `;

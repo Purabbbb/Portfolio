@@ -458,3 +458,231 @@ body {
     font-size: 0.75rem;
   }
 }
+
+/* ===== POKÉBALL OPEN ANIMATION ===== */
+@keyframes pokeball-open {
+  0% { transform: scale(1) rotate(0deg); }
+  20% { transform: scale(1.1) rotate(-10deg); }
+  40% { transform: scale(1.15) rotate(10deg); }
+  60% { transform: scale(1.2) rotate(-5deg); }
+  80% { transform: scale(1.3); }
+  100% { transform: scale(0); opacity: 0; }
+}
+
+@keyframes pokeball-reveal {
+  0% { transform: scale(0); opacity: 0; }
+  50% { transform: scale(1.1); opacity: 1; }
+  100% { transform: scale(1); opacity: 1; }
+}
+
+@keyframes sparkle {
+  0%, 100% { opacity: 0; transform: scale(0) rotate(0deg); }
+  50% { opacity: 1; transform: scale(1) rotate(180deg); }
+}
+
+.pokeball-container {
+  perspective: 1000px;
+  cursor: pointer;
+}
+
+.pokeball-container:hover .pokeball-svg {
+  filter: drop-shadow(0 0 20px rgba(255,203,5,0.5));
+}
+
+/* ===== 3D CARD TILT ===== */
+.card-3d {
+  perspective: 1200px;
+  transform-style: preserve-3d;
+}
+
+.card-3d-inner {
+  transform-style: preserve-3d;
+  transition: transform 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.card-3d-inner.flipped {
+  transform: rotateY(180deg);
+}
+
+.card-3d-front,
+.card-3d-back {
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+}
+
+.card-3d-back {
+  transform: rotateY(180deg);
+}
+
+/* ===== MEMORY DEX MASONRY ===== */
+.memory-grid {
+  columns: 2;
+  column-gap: 16px;
+}
+@media (min-width: 768px) {
+  .memory-grid {
+    columns: 3;
+  }
+}
+
+.memory-grid > * {
+  break-inside: avoid;
+  margin-bottom: 16px;
+}
+
+.memory-item {
+  position: relative;
+  overflow: hidden;
+  border-radius: 16px;
+  cursor: pointer;
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.memory-item::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, transparent 40%, rgba(0,0,0,0.8) 100%);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.memory-item:hover::after {
+  opacity: 1;
+}
+
+.memory-item:hover {
+  transform: scale(1.03);
+  box-shadow: 0 12px 40px rgba(255,203,5,0.15);
+}
+
+.memory-item .memory-info {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 16px;
+  z-index: 10;
+  transform: translateY(20px);
+  opacity: 0;
+  transition: all 0.3s ease;
+}
+
+.memory-item:hover .memory-info {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+/* ===== LIGHTBOX ===== */
+.lightbox-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 100;
+  background: rgba(0,0,0,0.9);
+  backdrop-filter: blur(10px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* ===== QUEST PROGRESS BAR ===== */
+.quest-progress {
+  height: 8px;
+  background: rgba(255, 255, 255, 0.06);
+  border-radius: 4px;
+  overflow: hidden;
+  position: relative;
+}
+
+.quest-progress-fill {
+  height: 100%;
+  border-radius: 4px;
+  position: relative;
+  overflow: hidden;
+  transition: width 1s ease-out;
+}
+
+.quest-progress-fill::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(
+    90deg,
+    transparent 0%,
+    rgba(255, 255, 255, 0.3) 50%,
+    transparent 100%
+  );
+  background-size: 200% 100%;
+  animation: shimmer 1.5s infinite;
+}
+
+/* ===== CURSOR GLOW TRAIL ===== */
+.cursor-glow {
+  position: fixed;
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: 1;
+  background: radial-gradient(circle, rgba(255,203,5,0.06) 0%, transparent 70%);
+  transform: translate(-50%, -50%);
+  transition: opacity 0.3s ease;
+}
+
+/* ===== ENHANCED SECTION AREA ===== */
+.section-area-label {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 4px 12px;
+  border-radius: 20px;
+  font-family: var(--font-pixel);
+  font-size: 0.35rem;
+  color: var(--text-muted);
+  background: rgba(255,255,255,0.03);
+  border: 1px solid rgba(255,203,5,0.1);
+  margin-bottom: 8px;
+}
+
+/* ===== TRAINER CARD TILT ===== */
+.trainer-card-tilt {
+  transition: transform 0.1s ease-out;
+  transform-style: preserve-3d;
+}
+
+/* ===== FEATURED PROJECT POKÉBALL ===== */
+.pokeball-hover {
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.pokeball-hover:hover {
+  filter: drop-shadow(0 0 25px rgba(255,203,5,0.4));
+  transform: scale(1.1) rotate(10deg);
+}
+
+/* ===== NAV AREA TOOLTIP ===== */
+.nav-tooltip {
+  position: absolute;
+  bottom: -28px;
+  left: 50%;
+  transform: translateX(-50%) scale(0.8);
+  padding: 4px 10px;
+  border-radius: 8px;
+  font-family: var(--font-pixel);
+  font-size: 0.3rem;
+  color: var(--accent-primary);
+  background: var(--bg-card);
+  border: 1px solid rgba(255,203,5,0.2);
+  white-space: nowrap;
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.2s ease;
+}
+
+.nav-item:hover .nav-tooltip {
+  opacity: 1;
+  transform: translateX(-50%) scale(1);
+}

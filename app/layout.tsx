@@ -2,25 +2,25 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Aryan Bhati | Pokémon Portfolio — Full-Stack Developer & AI Engineer",
+  title: "Purab Bhatia | Pokémon Portfolio — AI/ML Engineer",
   description:
-    "Explore Aryan Bhati's gamified Pokémon-themed portfolio. A Computer Science student specializing in AI/ML, full-stack development, and creative engineering.",
+    "Explore Purab Bhatia's gamified Pokémon-themed portfolio. A B.Tech CSE (AI & ML) student specializing in machine learning, deep learning, and creative engineering.",
   keywords: [
-    "Aryan Bhati",
+    "Purab Bhatia",
     "portfolio",
     "developer",
     "AI",
     "machine learning",
-    "full-stack",
+    "deep learning",
     "Pokemon",
     "gamified",
     "Next.js",
   ],
-  authors: [{ name: "Aryan Bhati" }],
+  authors: [{ name: "Purab Bhatia" }],
   openGraph: {
-    title: "Aryan Bhati | Pokémon Portfolio",
+    title: "Purab Bhatia | Pokémon Portfolio",
     description:
-      "A gamified Pokémon-themed portfolio showcasing skills, projects, and achievements.",
+      "A gamified Pokémon-themed portfolio showcasing AI/ML skills, projects, and achievements.",
     type: "website",
   },
 };

@@ -10,7 +10,7 @@ export default function IntroScreen({ onStart }: IntroScreenProps) {
   const [phase, setPhase] = useState<"idle" | "typing" | "ready">("idle");
   const [displayText, setDisplayText] = useState("");
   const [showPokeball, setShowPokeball] = useState(false);
-  const fullText = "Welcome Trainer!\nBegin your journey with Aryan Bhati...";
+  const fullText = "Welcome Trainer!\nBegin your journey with Purab Bhatia...";
 
   useEffect(() => {
     const timer = setTimeout(() => {
@@ -211,7 +211,7 @@ export default function IntroScreen({ onStart }: IntroScreenProps) {
           animate={{ opacity: 0.5 }}
           transition={{ delay: 1.5 }}
         >
-          © 2025 Aryan Bhati — v1.0
+          © 2025 Purab Bhatia — v2.0
         </motion.p>
       </motion.div>
     </AnimatePresence>

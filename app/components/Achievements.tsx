@@ -13,6 +13,9 @@ export default function Achievements() {
   return (
     <section id="achievements" className="py-20 px-4 sm:px-8 relative">
       <div className="max-w-6xl mx-auto">
+        <div className="text-center mb-4">
+          <span className="section-area-label">🏅 Badge Hall</span>
+        </div>
         <motion.h2
           className="section-title text-center mb-4"
           initial={{ opacity: 0, y: 20 }}

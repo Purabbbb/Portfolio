@@ -22,6 +22,9 @@ export default function ContactSection() {
   return (
     <section id="contact" className="py-20 px-4 sm:px-8 relative">
       <div className="max-w-4xl mx-auto">
+        <div className="text-center mb-4">
+          <span className="section-area-label">🏥 Pokémon Center</span>
+        </div>
         <motion.h2
           className="section-title text-center mb-4"
           initial={{ opacity: 0, y: 20 }}
@@ -29,7 +32,7 @@ export default function ContactSection() {
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
         >
-          ◆ Contact Trainer ◆
+          ◆ PokéCenter ◆
         </motion.h2>
 
         <motion.p
@@ -69,26 +72,26 @@ export default function ContactSection() {
                   {
                     icon: "✉️",
                     label: "Email",
-                    value: trainerData.socials.email,
+                    value: "bhatiapurab27@gmail.com",
                     href: `mailto:${trainerData.socials.email}`,
                   },
                   {
                     icon: "🐙",
                     label: "GitHub",
-                    value: "github.com/aryanbhati",
+                    value: "github.com/Purabbbb",
                     href: trainerData.socials.github,
                   },
                   {
                     icon: "💼",
                     label: "LinkedIn",
-                    value: "linkedin.com/in/aryanbhati",
+                    value: "linkedin.com/in/purab-bhatia",
                     href: trainerData.socials.linkedin,
                   },
                   {
-                    icon: "🐦",
-                    label: "Twitter",
-                    value: "twitter.com/aryanbhati",
-                    href: trainerData.socials.twitter,
+                    icon: "📞",
+                    label: "Phone",
+                    value: "9911699911",
+                    href: "tel:9911699911",
                   },
                 ].map((item) => (
                   <motion.a
