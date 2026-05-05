@@ -1,7 +1,7 @@
 "use client";
 import { motion, AnimatePresence } from "framer-motion";
 import { useState } from "react";
-import { projectsData, Project } from "../data/portfolio";
+import { projectsData } from "../data/portfolio";
 
 const difficultyBadge: Record<string, string> = {
   Easy: "bg-green-500/20 text-green-400 border-green-500/30",
@@ -135,7 +135,6 @@ export default function ProjectBattles() {
                         <motion.div
                           key={j}
                           className="absolute w-1.5 h-1.5 rounded-full"
-                          style={{ background: "#ffcb05" }}
                           initial={{ scale: 0, opacity: 0 }}
                           animate={{
                             scale: [0, 1, 0],

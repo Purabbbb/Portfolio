@@ -76,8 +76,8 @@ export default function IntroScreen({ onStart }: IntroScreenProps) {
               filter: "blur(2px)",
             }}
             animate={{
-              x: [0, Math.random() * 200 - 100, 0],
-              y: [0, Math.random() * 200 - 100, 0],
+              x: [0, ((i * 37) % 200) - 100, 0],
+              y: [0, ((i * 53) % 200) - 100, 0],
               opacity: [0.3, 0.7, 0.3],
             }}
             transition={{

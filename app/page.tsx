@@ -14,6 +14,17 @@ import MemoryDex from "./components/MemoryDex";
 import Achievements from "./components/Achievements";
 import ContactSection from "./components/ContactSection";
 import AIChatSystem from "./components/AIChatSystem";
+// Section divider component
+const SectionDivider = ({ color = "rgba(255,203,5,0.15)" }: { color?: string }) => (
+  <div className="max-w-4xl mx-auto px-8">
+    <div
+      className="h-px"
+      style={{
+        background: `linear-gradient(90deg, transparent, ${color}, transparent)`,
+      }}
+    />
+  </div>
+);
 
 export default function Home() {
   const [showIntro, setShowIntro] = useState(true);
@@ -54,18 +65,6 @@ export default function Home() {
   const handleStart = useCallback(() => {
     setShowIntro(false);
   }, []);
-
-  // Section divider component
-  const SectionDivider = ({ color = "rgba(255,203,5,0.15)" }: { color?: string }) => (
-    <div className="max-w-4xl mx-auto px-8">
-      <div
-        className="h-px"
-        style={{
-          background: `linear-gradient(90deg, transparent, ${color}, transparent)`,
-        }}
-      />
-    </div>
-  );
 
   return (
     <>
